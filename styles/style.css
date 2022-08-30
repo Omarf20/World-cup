@@ -4,3 +4,93 @@
 /*---------------------
        common styles or utilities 
    ---------------------------*/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    padding-left: 100PX;
+    padding-top: 50px;
+}
+
+main {
+    display: flex;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/*---------------------
+         top banner styles
+  ------------------------ */
+.top-banner {
+    background-color: black;
+    color: white;
+    width: 1321px;
+    height: 646px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.top-banner img {
+    width: 580px;
+    padding-top: 35px;
+    padding-right: 70px;
+}
+
+.top-blog {
+    padding-left: 106px;
+    padding-top: 50px;
+}
+
+.title-des-mobile {
+    display: none;
+}
+
+/* Watch button style */
+.center {
+    width: 180px;
+    height: 40px;
+    position: absolute;
+}
+
+.btn {
+    width: 180px;
+    height: 40px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: rgb(57, 91, 100);
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
