@@ -1,0 +1,439 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*---------------------
+       common styles or utilities 
+   ---------------------------*/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    padding-left: 100PX;
+    padding-top: 50px;
+}
+
+main {
+    display: flex;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/*---------------------
+         top banner styles
+  ------------------------ */
+.top-banner {
+    background-color: black;
+    color: white;
+    width: 1321px;
+    height: 646px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.top-banner img {
+    width: 580px;
+    padding-top: 35px;
+    padding-right: 70px;
+}
+
+.top-blog {
+    padding-left: 106px;
+    padding-top: 50px;
+}
+
+.title-des-mobile {
+    display: none;
+}
+
+/* Watch button style */
+.center {
+    width: 180px;
+    height: 40px;
+    position: absolute;
+}
+
+.btn {
+    width: 180px;
+    height: 40px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: rgb(57, 91, 100);
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+/*------------------------
+        page button section 
+  ----------------------------*/
+.page-btn-section {
+    background-color: black;
+    width: 250px;
+    height: 250px;
+    margin-top: 130px;
+    border-radius: 10px;
+    margin-left: 106px;
+}
+
+.upcomming-btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: rgb(57, 91, 100);
+    color: white;
+    border-radius: 5px;
+}
+
+.group-btn {
+    padding: 10px 61px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.blog-btn {
+    padding: 10px 80px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+.page-btn {
+    font-weight: 600;
+    padding-top: 45px;
+    margin-left: 30px;
+}
+
+/*-------------------
+      match page styles
+---------------------- */
+.match-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    margin-left: 70px;
+    margin-top: 130px;
+}
+
+.match-scedu {
+    border: 1px solid rgb(193, 191, 191);
+    border-radius: 10px;
+    width: 312px;
+    height: 242px;
+}
+
+.flags {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+#vs {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.scedu {
+    margin-left: 30px;
+}
+
+#time-date {
+    margin-left: 30px;
+    color: gray;
+}
+
+/*---------------------
+          footer styles 
+  ------------------------*/
+footer {
+    color: white;
+    width: 1500px;
+    height: 444px;
+    background-color: black;
+    margin-top: 130px;
+}
+
+.footer-top {
+    font-size: 40px;
+    padding-top: 110px;
+    padding-left: 650px;
+    padding-bottom: 50px;
+}
+
+.hr-line {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: white;
+    padding-left: 35px;
+}
+
+.social-sites {
+    margin-left: 600px;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.social-icon {
+    color: white;
+    margin-left: 40px;
+}
+
+/* --------------------
+        Media Queries 
+ ------------------------*/
+
+/* Mobile Device */
+
+@media only screen and (max-width:767px) {
+
+    /* common styles or utilites */
+    header {
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+
+    main {
+        display: inline-block;
+    }
+
+    /* top banner styles */
+
+    .top-banner {
+        flex-direction: column;
+        padding: 0px;
+        margin-left: 0px;
+        height: 0%;
+        width: 250%;
+        align-items: center;
+    }
+
+    #title {
+        margin-right: 13%;
+        text-align: center;
+    }
+
+    .title-des {
+        display: none;
+    }
+
+    .title-des-mobile {
+        display: block;
+        text-align: center;
+        margin-right: 10%;
+        padding-bottom: 5%;
+    }
+
+    .top-banner img {
+        width: 100%;
+        padding-top: 20%;
+        padding-right: 70px;
+    }
+
+    .center {
+        margin-left: 70%;
+    }
+
+    /* page button section */
+
+    .page-btn-section {
+        background-color: transparent;
+        margin-top: 15px;
+        margin-left: 80%;
+    }
+
+    .upcomming-btn {
+        border: 1px solid gray;
+    }
+
+    .group-btn {
+        border: 1px solid gray;
+
+    }
+
+    .page-btn {
+        font-weight: 600;
+        padding-top: 40px;
+    }
+
+    /* match section styles */
+
+    .match-section {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-bottom: 100px;
+    }
+
+    .match-scedu {
+        border-radius: 10px;
+        width: 250%;
+        height: 200%;
+        padding-bottom: 5%;
+    }
+
+    .flags {
+        align-items: center;
+        margin-left: 40px;
+    }
+
+    .flags img {
+        width: 250%;
+    }
+
+    #vs {
+        padding-left: 200px;
+        padding-right: 100px;
+    }
+
+    .scedu {
+        padding-left: 25%;
+    }
+
+    /* footer  styles */
+
+    footer {
+        width: 250%;
+        height: 200%;
+        margin-top: 20%;
+    }
+
+    .footer-top {
+        padding-top: 10%;
+        padding-left: 45%;
+        padding-bottom: 5%;
+    }
+
+    .footer-nav {
+        display: inline-block;
+        margin-left: 40%;
+        padding-top: 5%;
+    }
+
+    .nav {
+        padding-bottom: 10%;
+    }
+
+    .social-sites {
+        margin-left: 37%;
+    }
+
+}
+
+/* Tablet Devices */
+@media only screen and (min-width:768px) and (max-width:1023px) {
+
+    /* common styles and utilities */
+    main {
+        display: inline-block;
+    }
+
+    /* page button section */
+    .page-btn-section {
+        background-color: transparent;
+        width: 50%;
+        height: 0;
+        margin-top: 5px;
+        margin-left: 27%;
+    }
+
+    .upcomming-btn {
+        padding: 10px;
+        border: 1px solid gray;
+    }
+
+    .group-btn {
+        padding: 10px 40px;
+        border: 1px solid gray;
+        margin-left: 40px;
+
+    }
+
+    .blog-btn {
+        padding: 10px 80px;
+        margin-left: 50px;
+    }
+
+    .main-btn {
+        display: flex;
+    }
+
+    .page-btn {
+        padding-left: 0%;
+        font-weight: 600;
+        padding-top: 7%;
+    }
+
+    /* blog section styles */
+    .match-section {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 5%;
+        padding-left: 30px;
+    }
+
+    .match-scedu {
+        padding-bottom: 5%;
+        width: 650px;
+        height: 400px;
+    }
+
+    .flags img {
+        width: 200%;
+    }
+
+    #vs {
+        padding-left: 180px;
+        padding-right: 90px;
+    }
+
+    .scedu {
+        padding-top: 10%;
+        padding-left: 25%;
+    }
+
+    /* footer styles */
+    .footer-top {
+        padding-left: 45%;
+    }
+}
